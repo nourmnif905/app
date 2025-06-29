@@ -1,5 +1,5 @@
 {
-<<<<<<< HEAD
+
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
@@ -30,9 +30,9 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
     "vite": "^6.3.5"
-=======
+
   "dependencies": {
     "bootstrap": "^5.3.6"
->>>>>>> 52d4cb47b2c5e8893db4a5c8e90fc3b03ff02d37
+
   }
 }
