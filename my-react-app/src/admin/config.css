@@ -1,0 +1,61 @@
+.config-page {
+  
+    margin-left: 220px;
+ 
+}
+
+.config-page h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color:  #240c5c;
+  margin-left: 160px;
+  
+}
+
+.config-form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.config-form label {
+  display: block;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.config-form input[type="text"],
+.config-form input[type="email"],
+.config-form input[type="tel"] {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.config-form button {
+  margin-top: 1.5rem;
+  background-color: #9a93fa;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.config-form button:hover {
+  background-color: #7067f8;
+}
+
+.success-msg {
+  color: green;
+  margin-top: 1rem;
+  font-weight: 500;
+}

@@ -1,8 +1,21 @@
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./contact.css";
 
 export default function Contact() {
+  const [contactinfo, setcontactinfo] = useState({
+    address: "",
+    phone: "",
+    email: "",
+    hours: ""
+  });
+
+  useEffect(() => {
+    const savecontact = localStorage.getItem("contactinfo");
+    if (savecontact) {
+      setcontactinfo(JSON.parse(savecontact));
+    }
+  }, []);
+
   return (
     <div className="contact-page">
       <h2>Contactez-nous</h2>
@@ -22,17 +35,21 @@ export default function Contact() {
           </label>
           <label>
             Message
-            <textarea rows="5" placeholder="Écrivez votre message ici..." required />
+            <textarea
+              rows="5"
+              placeholder="Écrivez votre message ici..."
+              required
+            />
           </label>
           <button type="submit">Envoyer le message</button>
         </form>
 
         <div className="contact-info">
           <h3>Informations</h3>
-          <p><strong>📍 Adresse :</strong> Rue de la Technologie, Tunis</p>
-          <p><strong>📞 Téléphone :</strong> +216 55 123 456</p>
-          <p><strong>📧 Email :</strong> support@techphone.tn</p>
-          <p><strong>🕒 Heures :</strong> Lun - Sam : 9h - 18h</p>
+          <p><strong>📍 Adresse :</strong> {contactinfo.address}</p>
+          <p><strong>📞 Téléphone :</strong> {contactinfo.phone}</p>
+          <p><strong>📧 Email :</strong> {contactinfo.email}</p>
+          <p><strong>🕒 Heures :</strong> {contactinfo.hours}</p>
         </div>
       </div>
     </div>
