@@ -1,0 +1,28 @@
+.cards {
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.badge-solde {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc2626; /* rouge */
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 10;
+}
+.old-price {
+  text-decoration: line-through;
+  color: red;
+  margin-right: 10px;
+}

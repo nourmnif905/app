@@ -1,0 +1,139 @@
+
+.panier-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px;
+  background-color: #f5f5f5;
+}
+
+
+.produits {
+  flex: 2;
+  min-width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.panier-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.panier-details {
+  flex: 1;
+}
+
+.panier-item img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.panier-item h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.panier-item p {
+  margin: 4px 0 0;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.btn-annuler {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-annuler:hover {
+  background-color: #c0392b;
+}
+
+
+.facture {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.facture h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+
+.facture-ligne {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.facture-ligne.total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #222;
+}
+
+
+.remise {
+  color: green;
+  font-weight: bold;
+}
+
+.taxe {
+  color: orange;
+  font-weight: bold;
+}
+
+
+.btn-commander {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b74de;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-commander:hover {
+  background-color: #095bb5;
+}
+
+
+@media (max-width: 768px) {
+  .panier-page {
+    flex-direction: column;
+  }
+
+  .produits, .facture {
+    width: 100%;
+  }
+}
